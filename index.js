@@ -11,3 +11,19 @@ const obj = {
 }
 
 obj.getA().getB();
+
+// SCOPE
+
+var myObject = {
+  foo: "bar",
+  func: function () {
+    var self = this; /*this is a local variable*/
+    console.log("outer func:  this.foo = " + this.foo);
+    console.log("outer func:  self.foo = " + self.foo);
+    (function () {
+      console.log("inner func:  this.foo = " + this.foo);
+      console.log("inner func:  self.foo = " + self.foo); /*self is in the local scope*/
+    }());
+  }
+};
+myObject.func();
