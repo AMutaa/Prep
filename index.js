@@ -86,19 +86,26 @@ function dup(arr) {
 
 
 
-const counter = {
-  cnt: 0,
+// const counter = {
+//   cnt: 0,
 
-  inc: function () {
-    cnt++;
-    console.log(cnt);
-  }
-};
+//   inc: function () {
+//     cnt++;
+//     console.log(cnt);
+//   }
+// };
 
-var unboundInc = counter.inc;
-console.log(unboundInc());
+// var unboundInc = counter.inc;
+// console.log(unboundInc());
 
-var boundInc = unbound.bind(counter);
+// var boundInc = unbound.bind(counter);
 
-const button = document.getElementsByTagName('button')[0];
-button.addEventListener('click', boundInc, false);
+// const button = document.getElementsByTagName('button')[0];
+// button.addEventListener('click', boundInc, false);
+
+
+// const array2 = [Martin, William, Daniel, Francis];
+
+const array4 = [2, 3, 6, 7]
+const array5 = array4.map(x => x * 2);
+console.log(array5);
