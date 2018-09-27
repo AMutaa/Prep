@@ -84,25 +84,21 @@ function dup(arr) {
   }
 }
 
-function counter() {
-  var cnt = 0;
-  var inc = function () {
-    cnt++
-    console.log(cnt)
+
+
+const counter = {
+  cnt: 0,
+
+  inc: function () {
+    cnt++;
+    console.log(cnt);
   }
-}
-var het = counter.inc;
+};
 
+var unboundInc = counter.inc;
+console.log(unboundInc());
 
-
-// const counter = {
-//   cnt: 0,
-
-//   inc: function () {
-//     cnt++;
-//     console.log(cnt);
-//   }
-// };
+var boundInc = unbound.bind(counter);
 
 const button = document.getElementsByTagName('button')[0];
-button.addEventListener('click', het.bind(counter), false);
+button.addEventListener('click', boundInc, false);
