@@ -81,18 +81,28 @@ function dup(arr) {
   var dup = [];
   var obj = {};
   for (var i = 0; i < array.length; i++) {
-
   }
 }
 
-const counter = {
-  cnt: 0,
-
-  inc: function () {
-    cnt++;
-    console.log(cnt);
+function counter() {
+  var cnt = 0;
+  var inc = function () {
+    cnt++
+    console.log(cnt)
   }
-};
+}
+var het = counter.inc;
+
+
+
+// const counter = {
+//   cnt: 0,
+
+//   inc: function () {
+//     cnt++;
+//     console.log(cnt);
+//   }
+// };
 
 const button = document.getElementsByTagName('button')[0];
-button.addEventListener('click', counter.bind(inc), false);
+button.addEventListener('click', het.bind(counter), false);
