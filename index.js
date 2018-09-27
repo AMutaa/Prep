@@ -48,7 +48,7 @@ var carname = "Volvo xc60"
 
 console.log(carname.toLowerCase());
 
-// Count number of letters is a string
+// Count number of letters in a string
 function count(params, string) {
   var count = 0;
   for (var i = 0; i < string.length; i++) {
@@ -59,4 +59,16 @@ function count(params, string) {
   return count;
 }
 
+function counter(string) {
+  var count = 0;
+  var alphabet = "0123456789abcdefghijklmnopqrstuvwxyz"
+  for (var i; i < string.length; i++) {
+    if (string[i] === alphabet.split("")) {
+      count++
+    };
+  }
+  return count
+}
+
+console.log(counter(name));
 console.log(count("p", "apple"));
