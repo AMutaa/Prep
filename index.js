@@ -59,16 +59,25 @@ function count(params, string) {
   return count;
 }
 
-function counter(string) {
-  var count = 0;
-  var alphabet = "0123456789abcdefghijklmnopqrstuvwxyz"
-  for (var i; i < string.length; i++) {
-    if (string[i] === alphabet.split("")) {
-      count++
-    };
-  }
-  return count
-}
+// function counter(string) {
+//   var count = 0;
+//   var alphabet = "0123456789abcdefghijklmnopqrstuvwxyz"
+//   for (var i; i < string.length; i++) {
+//     if (string[i] === alphabet.split("")) {
+//       count++
+//     };
+//   }
+//   return count
+// }
 
-console.log(counter(name));
+// console.log(counter(name));
 console.log(count("p", "apple"));
+
+
+
+var array1 = [1, 2, 3, 2, 4, 5];
+
+function dup(arr) {
+  var dup = [];
+  var obj = {};
+}
