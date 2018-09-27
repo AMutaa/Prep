@@ -80,4 +80,19 @@ var array1 = [1, 2, 3, 2, 4, 5];
 function dup(arr) {
   var dup = [];
   var obj = {};
+  for (var i = 0; i < array.length; i++) {
+
+  }
 }
+
+const counter = {
+  cnt: 0,
+
+  inc: function () {
+    cnt++;
+    console.log(cnt);
+  }
+};
+
+const button = document.getElementsByTagName('button')[0];
+button.addEventListener('click', counter.bind(inc), false);
