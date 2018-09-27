@@ -104,8 +104,14 @@ function dup(arr) {
 // button.addEventListener('click', boundInc, false);
 
 
-// const array2 = [Martin, William, Daniel, Francis];
+
 
 const array4 = [2, 3, 6, 7]
 const array5 = array4.map(x => x * 2);
 console.log(array5);
+
+const array6 = ["Martin", "William", "Daniel", "Francis"]
+
+const array7 = array6.map((name) => `name + Connors`)
+
+console.log(array7);
