@@ -113,6 +113,3 @@ const array6 = ["Martin", "William", "Daniel", "Francis"]
 const array7 = array6.map((name) => `name + Connors`)
 
 console.log(array7);
-
-
-Review < Array className = "push" > < /Array>
