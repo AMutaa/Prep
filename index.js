@@ -37,8 +37,7 @@ function foo1() {
 console.log(foo1());
 
 function foo2() {
-  return
-  {
+  return {
     bar: "hello"
   };
 }
@@ -80,8 +79,7 @@ var array1 = [1, 2, 3, 2, 4, 5];
 function dup(arr) {
   var dup = [];
   var obj = {};
-  for (var i = 0; i < array.length; i++) {
-  }
+  for (var i = 0; i < array.length; i++) {}
 }
 
 
@@ -115,3 +113,6 @@ const array6 = ["Martin", "William", "Daniel", "Francis"]
 const array7 = array6.map((name) => `name + Connors`)
 
 console.log(array7);
+
+
+Review < Array className = "push" > < /Array>
