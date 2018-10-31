@@ -128,3 +128,15 @@ console.log(array7);
 //     console.log('Fizz-Buzz')
 //   }
 // }
+
+
+function greeting(name) {
+  alert('Hello ' + name)
+}
+
+function processUserInput(callback) {
+  const name = prompt('Whats your name?');
+  callback(name)
+}
+
+processUserInput(greeting);
