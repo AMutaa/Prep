@@ -110,6 +110,21 @@ console.log(array5);
 
 const array6 = ["Martin", "William", "Daniel", "Francis"]
 
-const array7 = array6.map((name) => `name + Connors`)
+// const array7 = array6.map((name) => `name + Connors`)
+const array7 = array6.map((name) => `${name} Connors`)
 
 console.log(array7);
+
+//Fizz Buzz
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 3 == 0) {
+    console.log('Fizz')
+  }
+  if (i % 5 == 0) {
+    console.log('Buzz')
+  }
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log('Fizz-Buzz')
+  }
+}
